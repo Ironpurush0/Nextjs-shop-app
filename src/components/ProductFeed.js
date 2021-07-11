@@ -28,6 +28,7 @@ const ProductFeed = ({ data }) => {
 					<ProductItem key={item.id} item={item} />
 				))}
 			</div>
+
 			<h1 className='font-bold text-4xl my-5'>Women's clothing</h1>
 			<div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
 				{catData2.map((item) => (
