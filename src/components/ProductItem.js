@@ -1,6 +1,6 @@
 const ProductItem = ({ item }) => {
 	return (
-		<div className='flex flex-col justify-between border w-full p-2'>
+		<div className='hover:cursor-pointer flex flex-col justify-between border w-full p-2'>
 			<div className='h-52'>
 				<img
 					src={item.image}
