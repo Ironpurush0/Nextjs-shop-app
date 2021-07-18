@@ -7,6 +7,7 @@ import { Carousel } from "react-responsive-carousel";
 const Banner = () => {
 	return (
 		<div className='relative'>
+			<div className='absolute w-full h-full bg-gradient-to-b from-transparent to-white'></div>
 			<Carousel
 				autoPlay={true}
 				interval={3000}
@@ -17,7 +18,7 @@ const Banner = () => {
 				<div className='h-96'>
 					<img
 						src='https://image.freepik.com/free-vector/new-season-banner-template_1361-1221.jpg'
-						className='object-contain h-full w-full'
+						// className='object-contain h-full w-full'
 						alt='shop'
 						loading='lazy'
 					/>

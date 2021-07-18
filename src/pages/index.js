@@ -16,7 +16,7 @@ export const getServerSideProps = async (ctx) => {
 
 export default function Home({ data }) {
 	return (
-		<div>
+		<div className='bg-gray-100'>
 			<Head>
 				<title>Shirtz</title>
 			</Head>

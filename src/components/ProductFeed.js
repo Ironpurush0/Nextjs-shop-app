@@ -3,35 +3,28 @@ import ProductItem from "./ProductItem";
 
 const ProductFeed = ({ data }) => {
 	console.log(data);
-	const catData = data.filter((item) => item.category === "men's clothing");
-	const catData2 = data.filter((item) => item.category === "women's clothing");
-	const catData3 = data.filter((item) => item.category === "jewelery");
-	const catData4 = data.filter((item) => item.category === "electronics");
 
 	return (
-		<div className='md:container my-10 mx-auto z-30'>
-			<h1 className='font-bold text-4xl mb-5'>Men's clothing</h1>
-			<div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
-				{catData.map((item) => (
-					<ProductItem key={item.id} item={item} />
-				))}
-			</div>
-			<h1 className='font-bold text-4xl my-5'>Jwellery</h1>
-			<div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
-				{catData3.map((item) => (
-					<ProductItem key={item.id} item={item} />
-				))}
-			</div>
-			<h1 className='font-bold text-4xl my-5'>Electronics</h1>
-			<div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
-				{catData4.map((item) => (
+		<div className='md:container my-10 mx-auto'>
+			<div className='my-5 grid grid-flow-row-dense grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+				{data.slice(0, 4).map((item) => (
 					<ProductItem key={item.id} item={item} />
 				))}
 			</div>
 
-			<h1 className='font-bold text-4xl my-5'>Women's clothing</h1>
-			<div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
-				{catData2.map((item) => (
+			<img
+				className='md:col-span-full'
+				src='https://image.freepik.com/free-vector/modern-super-sale-promotion-bright-banner_1055-6985.jpg'
+				alt='cloth'
+			/>
+			<div className='my-5 grid grid-flow-row-dense grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+				{data.slice(4, 5).map((item) => (
+					<ProductItem key={item.id} item={item} />
+				))}
+			</div>
+
+			<div className='my-5 grid grid-flow-row-dense grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+				{data.slice(5, data.length).map((item) => (
 					<ProductItem key={item.id} item={item} />
 				))}
 			</div>
