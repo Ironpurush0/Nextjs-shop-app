@@ -408,6 +408,11 @@
   "resolved" "https://registry.npmjs.org/@hapi/hoek/-/hoek-9.2.0.tgz"
   "version" "9.2.0"
 
+"@heroicons/react@^1.0.2":
+  "integrity" "sha512-4FqozK7QCwyYTTWgtmG+Sffo20arFzIXuzY6TnsShNIPBRn6FKK/CuaYorVkNogxk7FW8MdOvSnpMPQpNeA04g=="
+  "resolved" "https://registry.npmjs.org/@heroicons/react/-/react-1.0.2.tgz"
+  "version" "1.0.2"
+
 "@next/env@10.2.2":
   "integrity" "sha512-m0xOpl4F9z7R7Yt2OtJoo6ZUsFPdx+kuvZeoctH7T6lO66DmZL3W6MQDxso/ArkH8VOlDPZgeQVVBPf+I7wflA=="
   "resolved" "https://registry.npmjs.org/@next/env/-/env-10.2.2.tgz"
@@ -639,6 +644,11 @@
   "version" "3.0.0"
   dependencies:
     "event-target-shim" "^5.0.0"
+
+"accounting@^0.4.1":
+  "integrity" "sha1-h91BA+/39EYPHhhvXGd+1s9WaIM="
+  "resolved" "https://registry.npmjs.org/accounting/-/accounting-0.4.1.tgz"
+  "version" "0.4.1"
 
 "acorn-node@^1.6.1":
   "integrity" "sha512-8mt+fslDufLYntIoPAaIMUe/lrbrehIiwmR3t2k9LljIzoigEPF27eLk2hy8zSGzmR/ogr7zbRKINMo1u0yh5A=="
@@ -1231,6 +1241,15 @@
   "version" "2.0.0"
   dependencies:
     "cssnano-preset-simple" "^2.0.0"
+
+"currency-formatter@^1.5.8":
+  "integrity" "sha512-/Oim4XnX82wf+JknrObifmBHpXnSQZC3FrCi+Oss4olXm3nqGWd8eY3sL2Tf0pZ/zuUqj1stU7f//5Hh27+cSQ=="
+  "resolved" "https://registry.npmjs.org/currency-formatter/-/currency-formatter-1.5.8.tgz"
+  "version" "1.5.8"
+  dependencies:
+    "accounting" "^0.4.1"
+    "locale-currency" "0.0.2"
+    "object-assign" "^4.1.1"
 
 "data-uri-to-buffer@3.0.1":
   "integrity" "sha512-WboRycPNsVw3B3TL559F7kuBUM4d8CgMEvk6xEJlOp7OBPjt6G7z8WMWlD2rOFZLk6OYfFIUGsCOWzcQH9K2og=="
@@ -2229,6 +2248,11 @@
     "emojis-list" "^2.0.0"
     "json5" "^1.0.1"
 
+"locale-currency@0.0.2":
+  "integrity" "sha1-4skGB1Y85HpZ+VWeRacOJOTbS20="
+  "resolved" "https://registry.npmjs.org/locale-currency/-/locale-currency-0.0.2.tgz"
+  "version" "0.0.2"
+
 "locate-path@^5.0.0":
   "integrity" "sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g=="
   "resolved" "https://registry.npmjs.org/locate-path/-/locate-path-5.0.0.tgz"
@@ -3015,7 +3039,7 @@
     "prop-types" "^15.5.8"
     "react-easy-swipe" "^0.0.21"
 
-"react@^16.6.0 || ^17", "react@^16.8.0 || ^17.0.0", "react@^16.8.3 || ^17", "react@^16.9.0 || ^17", "react@15.x.x || 16.x.x || 17.x.x", "react@17.0.1":
+"react@^16.6.0 || ^17", "react@^16.8.0 || ^17.0.0", "react@^16.8.3 || ^17", "react@^16.9.0 || ^17", "react@>= 16", "react@15.x.x || 16.x.x || 17.x.x", "react@17.0.1":
   "integrity" "sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.1.tgz"
   "version" "17.0.1"
