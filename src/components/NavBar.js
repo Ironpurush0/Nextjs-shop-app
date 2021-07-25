@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { signin, signout, useSession } from "next-auth/client";
+
 const NavBar = () => {
 	return (
 		<header className='py-6 border'>
@@ -36,7 +38,9 @@ const NavBar = () => {
 					/>
 				</svg>
 				<div className='flex items-center justify-center'>
-					<span className='mr-4 hidden md:block font-semibold cursor-pointer'>
+					<span
+						onClick={signin}
+						className='mr-4 hidden md:block font-semibold cursor-pointer'>
 						<p>Sign in</p>
 						<p>Username</p>
 					</span>
