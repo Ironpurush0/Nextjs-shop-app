@@ -2,10 +2,13 @@ import Image from "next/image";
 import Link from "next";
 import { signin, signout, useSession } from "next-auth/client";
 import { useRouter } from "next/router";
+import { useSelector } from "react-redux";
+import { selectItems } from "../slices/basketSlice";
 
 const NavBar = () => {
 	const [session] = useSession();
 	const router = useRouter();
+	const items = useSelector(selectItems);
 
 	return (
 		<header className='py-6'>
@@ -38,7 +41,7 @@ const NavBar = () => {
 					</span>
 					<span className=''>
 						<div className='right-7 top-4 flex items-center justify-center w-7 h-7 rounded-full absolute bg-black text-white'>
-							<p className='p-2'>0</p>
+							<p className='p-2'>{items.length}</p>
 						</div>
 						<svg
 							onClick={() => router.push("/checkout")}
