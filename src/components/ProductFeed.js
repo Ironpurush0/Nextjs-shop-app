@@ -8,7 +8,15 @@ const ProductFeed = ({ data }) => {
 		<div className='md:container my-10 mx-auto'>
 			<div className='my-5 grid grid-flow-row-dense grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
 				{data.slice(0, 4).map((item) => (
-					<ProductItem key={item.id} item={item} />
+					<ProductItem
+						key={item.id}
+						price={item.price}
+						title={item.title}
+						price={item.price}
+						category={item.category}
+						description={item.description}
+						image={item.image}
+					/>
 				))}
 			</div>
 
